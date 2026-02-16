@@ -1,95 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suraj Kumar Singh - Portfolio</title>
-    <link rel="stylesheet" href="index.css">
-    <script defer src="script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Suraj Kumar Singh | Java Backend Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 
 <body>
-    <header>
-        <h1>Suraj Kumar Singh</h1>
-        <p>Java Developer | Full Stack Developer | Cybersecurity Enthusiast</p>
-        <button id="theme-toggle">Toggle Dark/Light Mode</button>
-    </header>
+  <header class="header">
+    <h1>Suraj Kumar Singh</h1>
+    <p>Software Development Engineer | Java Backend Developer</p>
+    <button id="theme-toggle">🌙 Toggle Theme</button>
+  </header>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-        <a href="Suraj Kumar Singh.pdf" download class="resume-btn">Download Resume</a>
-    </nav>
+  <nav class="nav">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <a href="Suraj_Kumar_Singh_Java_Backend_Developer.pdf" download class="resume-btn">Download Resume</a>
+  </nav>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a passionate Software Engineer specializing in Java, Full-Stack Development, and Cybersecurity. With
-            expertise in Java, Spring Boot, React, MySQL, and more, I build scalable and secure applications that
-            enhance user experiences.
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      I am a <strong>Java Backend Developer</strong> with hands-on experience working on
+      <strong>production and UAT systems</strong> using <strong>Java and Spring Boot</strong>.
+      Currently working on enterprise-scale banking and ATM applications.
+      <br/><br/>
+      I specialize in debugging production issues, performing root cause analysis,
+      fixing backend logic, and building secure RESTful APIs.
+      I enjoy working on scalable backend systems and real-world problem solving.
+    </p>
+  </section>
 
-            I have worked on projects like a Healthcare Management System and a Library Management System, applying my
-            skills in backend development, database management, and frontend technologies. My keen interest in
-            cybersecurity drives me to develop applications that are not only functional but also secure.
-        </p>
-    </section>
+  <section id="skills" class="section">
+    <h2>Technical Skills</h2>
+    <ul class="skills-grid">
+      <li>Java</li>
+      <li>Spring Boot</li>
+      <li>Spring Security</li>
+      <li>REST APIs</li>
+      <li>JWT</li>
+      <li>JPA / Hibernate</li>
+      <li>MySQL</li>
+      <li>MongoDB</li>
+      <li>JUnit</li>
+      <li>Postman</li>
+      <li>Git & GitHub</li>
+      <li>Production Debugging</li>
+    </ul>
+  </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Java</li>
-            <li>React</li>
-            <li>HTML & CSS</li>
-            <li>JavaScript</li>
-            <li>Spring & Spring Boot</li>
-            <li>MySQL & JDBC</li>
-            <li>Tomcat</li>
-        </ul>
-    </section>
+  <section id="experience" class="section">
+    <h2>Work Experience</h2>
+    <div class="card">
+      <h3>Software Development Engineer (Backend – Java)</h3>
+      <p><strong>CMS Info Systems (ICICI Bank Project)</strong> | June 2025 – Present</p>
+      <ul>
+        <li>Debugging and fixing UAT & production issues in Java and Spring Boot applications</li>
+        <li>Performing root cause analysis using logs, stack traces, and database queries</li>
+        <li>Delivering backend hotfixes and stability improvements in live systems</li>
+        <li>Collaborating with QA teams during UAT and production releases</li>
+      </ul>
+    </div>
+  </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Healthcare Application</h3>
-            <p>This Healthcare Management App is a user-friendly mobile application designed to simplify healthcare
-                services. Built using Java, XML, and SQLite, the app allows users to seamlessly manage their medical
-                needs, including:
+  <section id="projects" class="section">
+    <h2>Projects</h2>
 
-                <br>✅ Doctor Appointments – Book, reschedule, or cancel doctor appointments with ease.
-                <br>✅ Lab Test Booking – Schedule lab tests and receive reports digitally.
-                <br>✅ Medicine Ordering – Browse and purchase medicines online with home delivery options.
-                <br>✅ Patient Records – Securely store and access medical history and prescriptions.
-            </p>
+    <div class="card">
+      <h3>Authentify – Secure Authentication Backend</h3>
+      <p>
+        Secure authentication system built using Java and Spring Boot with JWT-based authorization.
+      </p>
+      <ul>
+        <li>JWT authentication & role-based access control</li>
+        <li>Password encryption using BCrypt</li>
+        <li>REST APIs with Spring Security & JPA</li>
+      </ul>
+      <a href="https://github.com/surajsingh9582/Authentify-Backend" target="_blank">GitHub →</a>
+    </div>
 
-            <br>
-            <h3>Library Management System (Java, SQL, JDBC, NetBeans)</h3>
-            <p>The Library Management System is a desktop application developed using Java, NetBeans, MySQL, and JDBC.
-                It is designed to help librarians manage books, users, and borrowing records efficiently.<br>
-                📚 Book Management – Add, update, delete, and categorize books in the database.
-                <br>🔍 Search & Filter – Easily search books by title, author, or category.
-                <br>📖 Borrow & Return System – Track book issuance and return dates with real-time updates.
-                <br>🛠 User Management – Register new users, maintain records, and check borrowing history.
-                <br>📊 Fine Calculation – Automatically calculate fines for overdue books.
-                <br>🔑 Admin & User Roles – Secure login system with different access levels.
-            </p>
-        </div>
-    </section>
+    <div class="card">
+      <h3>Healthcare Management System</h3>
+      <p>
+        Java desktop application for managing patients, lab tests, and appointments.
+      </p>
+      <ul>
+        <li>Core Java & SQLite</li>
+        <li>CRUD operations & data modeling</li>
+        <li>Error handling & clean architecture</li>
+      </ul>
+      <a href="https://github.com/surajsingh9582/Healthcare-App" target="_blank">GitHub →</a>
+    </div>
+  </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Mobile No.: 9582379576 </p>
-        <p>Email: <a href="mailto:singh.suraj14112@gmail.com">singh.suraj14112@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/suraj-singh-7624a6293/" target="_blank">LinkedIn Profile</a>
-        </p>
-        <p>GitHub: <a href="https://github.com/surajsingh9582" target="_blank">GitHub Profile</a></p>
-    </section>
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>📞 +91 9582379576</p>
+    <p>📧 <a href="mailto:singh.suraj14112@gmail.com">singh.suraj14112@gmail.com</a></p>
+    <p>🔗 <a href="https://www.linkedin.com/in/suraj-singh-7624a6293/" target="_blank">LinkedIn</a></p>
+    <p>💻 <a href="https://github.com/surajsingh9582" target="_blank">GitHub</a></p>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 Suraj Kumar Singh. All rights reserved.</p>
-    </footer>
-    <script src="portfolio.js"></script>
+  <footer class="footer">
+    <p>© 2026 Suraj Kumar Singh | Java Backend Developer</p>
+  </footer>
 </body>
-
 </html>
